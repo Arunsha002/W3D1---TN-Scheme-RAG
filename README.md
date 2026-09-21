@@ -72,38 +72,3 @@ What about pulses?_
                               ▼
                            User
 
-      **Project Structure**
-
-      W3D1 - TN Scheme RAG/
-│
-├── backend/
-│   └── app/
-│       ├── __init__.py
-│       ├── main.py
-│       └── rag.py
-│
-├── frontend/
-│   └── app.py
-│
-├── data/
-│   ├── raw/
-│   │   ├── schemes.json
-│   │   └── llm_knowledge_graph.gpickle
-│   │
-│   └── processed/
-│
-├── scripts/
-│   ├── create_knowledge_graph.py
-│   ├── test_llm_graph_extraction.py
-│   └── query_understanding.py
-│
-├── vectorstore/
-│   ├── index.faiss
-│   └── index.pkl
-│
-├── .env
-├── .gitignore
-├── README.md
-└── venv/
-                 
-
