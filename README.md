@@ -25,8 +25,20 @@ Instead of relying on a simple keyword search, the application combines multiple
 
 Example questions:
 
-```text  
-Which schemes provide subsidies to farmers?
+_Which schemes provide subsidies to farmers?
+
+Which schemes provide grants?
+
+Which agriculture schemes support pulses?
+
+Which schemes are available for farmers in Chennai?
+
+Which schemes are sponsored by the State?
+
+What about pulses?_
+
+**Architecture**
+
                  Tamil Nadu Government Website
                               │
                               ▼
@@ -59,14 +71,39 @@ Which schemes provide subsidies to farmers?
                               │
                               ▼
                            User
-Which schemes provide grants?
 
-Which agriculture schemes support pulses?
+      **Project Structure**
 
-Which schemes are available for farmers in Chennai?
-
-Which schemes are sponsored by the State?
-
-What about pulses?
-
+      W3D1 - TN Scheme RAG/
+│
+├── backend/
+│   └── app/
+│       ├── __init__.py
+│       ├── main.py
+│       └── rag.py
+│
+├── frontend/
+│   └── app.py
+│
+├── data/
+│   ├── raw/
+│   │   ├── schemes.json
+│   │   └── llm_knowledge_graph.gpickle
+│   │
+│   └── processed/
+│
+├── scripts/
+│   ├── create_knowledge_graph.py
+│   ├── test_llm_graph_extraction.py
+│   └── query_understanding.py
+│
+├── vectorstore/
+│   ├── index.faiss
+│   └── index.pkl
+│
+├── .env
+├── .gitignore
+├── README.md
+└── venv/
+                 
 
