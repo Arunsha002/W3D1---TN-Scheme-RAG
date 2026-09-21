@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+
+# Environment variables / API keys
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+
+# Generated vector database
+vectorstore/
+
+# Generated/processed data
+data/processed/
+
+# OS files
+.DS_Store
+Thumbs.db
